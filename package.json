@@ -1,0 +1,16 @@
+{
+  "name": "@alvarosabu/egghead-tres-3d-product-configurator",
+  "version": "1.0.0",
+  "packageManager": "pnpm@8.10.2",
+  "description": "Repository containing the source code for the 'Create a 3D Product configurator using TresJS' course on Egghead.io",
+  "author": "Alvaro Saburido",
+  "scripts": {
+    "dev:starter": "pnpm --filter starter dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@tresjs/eslint-config-vue": "^0.2.1"
+  }
+}
