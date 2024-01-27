@@ -6,6 +6,7 @@
   "author": "Alvaro Saburido",
   "scripts": {
     "dev:starter": "pnpm --filter starter dev",
+    "dev:tres-canvas": "pnpm --filter tres-canvas dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
