@@ -16,16 +16,16 @@
     "@tresjs/eslint-config-vue": "^0.2.1",
     "@types/three": "^0.159.0",
     "@vitejs/plugin-vue": "^5.0.3",
-    "typescript": "^5.2.2",
+    "typescript": "^5.3.3",
     "unocss": "^0.58.4",
     "vite": "^5.0.12",
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
     "@tresjs/cientos": "^3.7.0",
-    "@tresjs/core": "^3.6.1",
-    "@types/three": "^0.160.0",
-    "three": "^0.160.1",
+    "@tresjs/core": "^3.7.0",
+    "@types/three": "^0.161.1",
+    "three": "^0.161.0",
     "vue": "^3.4.15"
   }
 }
