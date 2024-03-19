@@ -1,20 +1,6 @@
 <script setup lang="ts">
-import { TresCanvas, useRenderLoop } from '@tresjs/core'
-import { ref, watchEffect } from 'vue';
-
-const { onLoop } = useRenderLoop()
-
-const boxRef = ref()
-
-watchEffect(()=> {
-  console.log(boxRef.value)
-})
-onLoop(({ delta, elapsed })=> {
-  if(!boxRef.value) return
-
-  boxRef.value.rotation.y += delta
-  boxRef.value.rotation.z = elapsed
-})
+import { TresCanvas } from '@tresjs/core'
+import { OrbitControls } from '@tresjs/cientos';
 </script>
 
 <template>
@@ -22,7 +8,8 @@ onLoop(({ delta, elapsed })=> {
     <TresPerspectiveCamera 
       :position="[5,5,5]" :look-at="[0,0,0]"
     />
-    <TresMesh ref="boxRef" :position="[0,2,0]">
+    <OrbitControls />
+    <TresMesh :position="[0,2,0]">
       <TresBoxGeometry :args="[1,1,1]"/>
       <TresMeshNormalMaterial />
     </TresMesh>
