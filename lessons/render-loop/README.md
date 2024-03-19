@@ -1,4 +1,5 @@
-# Course starter 🥚
+# Lesson 07
 
-This is the starter project for the course. It contains the basic setup for the project and the assets needed to follow the course.
+This code covers the following lessons:
+ - 07: Animations with `useRenderLoop`
 
