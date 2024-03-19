@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { TresCanvas } from '@tresjs/core'
-import { OrbitControls, ContactShadows } from '@tresjs/cientos';
 import TheHeader from './components/TheHeader.vue';
 import BaseColors from './components/BaseColors.vue';
 import CushionColors from './components/CushionColors.vue';
@@ -13,13 +12,6 @@ import CushionColors from './components/CushionColors.vue';
       <section class="min-h-400px">
         <TresCanvas alpha>
           <TresPerspectiveCamera :position="[0,0,11]" />
-          <OrbitControls />
-   
-          <ContactShadows
-            :opacity="0.2"
-            :blur="3"
-            :position="[0, -2, 0]" 
-          />
           <TresAmbientLight :args="['#fff', 1]" />
           <TresDirectionalLight :intensity="2" :position="[4,4,4]" />
         </TresCanvas>
