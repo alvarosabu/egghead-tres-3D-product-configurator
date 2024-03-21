@@ -3,6 +3,7 @@ import { TresCanvas } from '@tresjs/core'
 import TheHeader from './components/TheHeader.vue';
 import BaseColors from './components/BaseColors.vue';
 import CushionColors from './components/CushionColors.vue';
+import Headphones from './components/Headphones.vue';
 </script>
 
 <template>
@@ -11,6 +12,9 @@ import CushionColors from './components/CushionColors.vue';
     <div class="w-full grid grid-cols-1 sm:grid-cols-2">
       <section class="min-h-400px">
         <TresCanvas alpha>
+          <Suspense>
+            <Headphones />
+          </Suspense>
           <TresPerspectiveCamera :position="[0,0,11]" />
           <TresAmbientLight :args="['#fff', 1]" />
           <TresDirectionalLight :intensity="2" :position="[4,4,4]" />
