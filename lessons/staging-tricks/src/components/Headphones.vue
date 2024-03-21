@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useGLTF } from '@tresjs/cientos';
+import { useGLTF, Levioso, Html } from '@tresjs/cientos';
 import { useState } from '../composables/state';
 import { watch } from 'vue';
 
@@ -20,5 +20,15 @@ watch(selectedCushionColor, (color) => {
 </script>
 
 <template>
-  <primitive :object="model" />
+  <Levioso>
+    <Html
+      transform
+      :position="[2.4, 0, 2]"
+    >
+      <span class="bg-gray-700 font-bold text-light text-xs p-0.5 rounded">
+        299.99 €
+      </span>
+    </Html>
+    <primitive :object="model" />
+  </Levioso>
 </template>
