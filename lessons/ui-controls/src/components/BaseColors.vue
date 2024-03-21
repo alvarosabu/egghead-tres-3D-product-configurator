@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { useState } from '../composables/state';
 
-const selectedBaseColor = ref('#903345')
-const baseColors = reactive(['#903345', '#F2D3AC', '#F2F2F2', '#000000'])
+const { baseColors, selectedBaseColor } = useState()
 </script>
 
 <template>

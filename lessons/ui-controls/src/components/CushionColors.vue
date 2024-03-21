@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { useState } from '../composables/state';
 
-const selectedCushionColor = ref('#F2F2F2')
-const cushionColors = reactive(['#e5abb6', '#F2F2F2', '#f5f1eb', '#050505'])
+const { cushionColors, selectedCushionColor} = useState()
 </script>
 
 <template>
